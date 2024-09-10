@@ -112,14 +112,14 @@ class Graph {
 		g1.addEdge(2, 1);
 		g1.addEdge(0, 3);
 		g1.addEdge(3, 4);
-		System.out.println("CFC na primeira aresta ");
+		System.out.println("CFC no primeiro grafo: ");
 		g1.SCC();
 
 		Graph g2 = new Graph(4);
 		g2.addEdge(0, 1);
 		g2.addEdge(1, 2);
 		g2.addEdge(2, 3);
-		System.out.println("\nCFC na segunda aresta  ");
+		System.out.println("\nCFC no segundo grafo: ");
 		g2.SCC();
 
 		Graph g3 = new Graph(7);
@@ -131,7 +131,7 @@ class Graph {
 		g3.addEdge(1, 6);
 		g3.addEdge(3, 5);
 		g3.addEdge(4, 5);
-		System.out.println("\nCFC na terceira aresta  ");
+		System.out.println("\nCFC no terceiro grafo: ");
 		g3.SCC();
 
 		Graph g4 = new Graph(11);
@@ -152,7 +152,17 @@ class Graph {
 		g4.addEdge(7, 9);
 		g4.addEdge(8, 9);
 		g4.addEdge(9, 8);
-		System.out.println("\nCFC na quarta aresta  ");
+		System.out.println("\nCFC no quarto grafo: ");
 		g4.SCC();
+
+		Graph g5 = new Graph(5);
+        	g5.addEdge(0, 1);
+        	g5.addEdge(1, 2);
+        	g5.addEdge(2, 3);
+        	g5.addEdge(2, 4);
+        	g5.addEdge(3, 0);
+        	g5.addEdge(4, 2);
+        	System.out.println("\nCFC no quinto grafo: ");
+        	g5.SCC();
 	}
 }
